@@ -14,8 +14,16 @@
 <script src="../assets/js/vue.js"></script>
 <script type="text/javascript">
   //Vue中的Model
-
-
-
-
+  var myData={
+    message:'Hello Vue!'
+  };
+  //Vue实例,或者可以理解为ViewModel,它连接着view与Model
+	/*
+   el:表示Vue要操作哪一个元素下面的区域,比如:#app则表示操作id为app元素下面的区域;
+   data:表示Vue实例的数据对象,data的数据能响应数据的变化
+   */
+  var app=new Vue({
+    el:'#app',
+    data:myData
+  })
 </script>

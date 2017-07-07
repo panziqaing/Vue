@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vue中双向数据绑定</title>
+</head>
+<body>
+<h2>2.2 Vue中双向数据绑定</h2>
+<p style="text-indent: 20px;">MVVM模式其自身是实现了数据的双向绑定的,在Vue.js中我们可以通过指令<strong>v-model</strong>来实现</p>
+<hr>
+代码如下:
+<!--View视图-->
+<div id="app">
+	<p>{{message}}</p>
+	<input type="text" v-model="message"/>
+</div>
+</body>
+</html>
+<script src="../assets/js/vue.js"></script>
+<script type="text/javascript">
+   //数据
+	var myData={
+		message:'您好,世界!'
+	};
+
+	//ViewModel
+	var app=new Vue({
+		el:'#app',
+		data:myData
+	});
+</script>
